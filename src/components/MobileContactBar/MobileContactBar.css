@@ -1,0 +1,55 @@
+.mobile-contact-bar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(34, 29, 31, 0.08);
+  box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.05);
+  padding: 0.6rem 0;
+  padding-bottom: calc(0.6rem + env(safe-area-inset-bottom));
+}
+
+@media (max-width: 768px) {
+  .mobile-contact-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.mcb-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 0.5rem;
+  transition: opacity 0.2s ease;
+}
+
+.mcb-btn:active {
+  opacity: 0.7;
+}
+
+.mcb-email {
+  color: var(--rose-deep);
+}
+
+.mcb-whatsapp {
+  color: #25D366;
+}
+
+.mcb-divider {
+  width: 1px;
+  height: 28px;
+  background: rgba(34, 29, 31, 0.1);
+}

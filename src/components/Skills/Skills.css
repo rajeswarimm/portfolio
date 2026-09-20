@@ -1,0 +1,113 @@
+.skills-section {
+  padding: 2.5rem 1.5rem;
+  background: var(--rose-tint);
+  position: relative;
+  overflow: hidden;
+}
+
+.skills-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(184, 62, 83, 0.06) 0px,
+    rgba(184, 62, 83, 0.06) 1px,
+    transparent 1px,
+    transparent 15px
+  );
+  -webkit-mask-image: radial-gradient(
+    ellipse at center,
+    black 45%,
+    transparent 85%
+  );
+  mask-image: radial-gradient(ellipse at center, black 45%, transparent 85%);
+  pointer-events: none;
+}
+
+.skills-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.skills-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-bottom: 2.5rem;
+}
+
+.skills-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.55rem 1.15rem;
+  border-radius: 999px;
+  border: 1px solid rgba(34, 29, 31, 0.1);
+  background: #ffffff;
+  color: #574c4e;
+  font-family: "Manrope", sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease,
+    transform 0.2s ease;
+}
+
+.skills-tab:hover {
+  transform: translateY(-1px);
+  border-color: rgba(231, 90, 113, 0.4);
+}
+
+.skills-tab--active {
+  background: var(--rose);
+  border-color: var(--rose);
+  color: #ffffff;
+}
+
+.skills-panel {
+  min-height: 130px;
+  padding: 0.5rem 0;
+}
+
+.mobile-category-title {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .skills-list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem 2.1rem;
+  justify-content: center;
+}
+
+.skill-item {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-family: "Manrope", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.skill-item::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--rose);
+  flex-shrink: 0;
+}
