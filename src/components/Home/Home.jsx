@@ -148,10 +148,10 @@ export default function Home() {
             React Frontend Developer
           </p>
           <p className="home-line" ref={lineOneRef}>
-            I’m a React Frontend Developer with 1 year of professional experience building responsive and user-friendly web interfaces.
+            I&apos;m a React Front-End Developer with 1+ year of professional experience building responsive, user-friendly web interfaces.
           </p>
           <p className="home-line" ref={lineTwoRef}>
-            I focus on creating clean, modern, and responsive UIs using React.js, JavaScript, HTML, CSS, and Tailwind CSS. I enjoy building reusable components, integrating REST APIs, implementing responsive layouts, and creating smooth user experiences across different devices.
+            I focus on creating clean, modern UIs using React.js, JavaScript, HTML, CSS, Bootstrap, and Tailwind CSS. I enjoy building reusable components, integrating REST APIs, and creating smooth user experiences across devices.
           </p>
 
           <div className="home-ctas" ref={ctasRef}>

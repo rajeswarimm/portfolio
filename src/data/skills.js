@@ -1,5 +1,7 @@
 import {
   FiCode,
+  FiLayers,
+  FiGlobe,
   FiCheckSquare,
   FiTool,
 } from "react-icons/fi";
@@ -11,12 +13,32 @@ const skills = [
     icon: FiCode,
     items: [
       "React.js",
-      "JavaScript",
+      "JavaScript ES6+",
       "HTML5",
       "CSS3",
+      "Bootstrap",
       "Tailwind CSS",
       "Responsive Design",
+    ],
+  },
+  {
+    key: "react-concepts",
+    label: "React Concepts",
+    icon: FiLayers,
+    items: [
+      "Functional Components",
+      "React Hooks",
+      "Reusable Components",
+      "State Management",
+    ],
+  },
+  {
+    key: "apis",
+    label: "APIs",
+    icon: FiGlobe,
+    items: [
       "REST API Integration",
+      "JSON",
     ],
   },
   {
@@ -24,17 +46,21 @@ const skills = [
     label: "Testing",
     icon: FiCheckSquare,
     items: [
+      "Functional Testing",
+      "Regression Testing",
       "Robot Framework",
       "Python",
-      "Test Automation",
-      "Functional Testing"
     ],
   },
   {
     key: "tools",
     label: "Tools",
     icon: FiTool,
-    items: ["Git", "GitHub", "VS Code"],
+    items: [
+      "Git",
+      "GitHub",
+      "Visual Studio Code",
+    ],
   },
 ];
 

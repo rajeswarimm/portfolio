@@ -31,9 +31,10 @@ const experience = [
     shortPeriod: "Present",
     current: true,
     points: [
-      "Build responsive and mobile-friendly interfaces using React.js, JavaScript, HTML5, CSS3, and Bootstrap.",
-      "Develop reusable React components and integrate REST APIs for dynamic data.",
-      "Maintain client-facing websites with focus on responsive design and cross-browser compatibility.",
+      "Developing responsive, mobile-friendly interfaces using React.js, JavaScript, HTML, CSS, and Bootstrap.",
+      "Building reusable React components.",
+      "Integrating REST APIs to display dynamic data.",
+      "Maintaining websites and addressing UI and cross-browser compatibility issues.",
     ],
   }
 ];
